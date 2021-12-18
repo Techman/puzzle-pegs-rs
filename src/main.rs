@@ -26,6 +26,8 @@ fn main() {
     // Create regular expressions for valid input
     // start_pos: can be anything from 1 to 15, inclusive
     // end_pos: can be anything from 1 to 15, inclusive OR -1 if ending position does not matter
+    // The result from Regex::new is immediately unwrapped here, as the regex is already known
+    // to be valid (tested it on Regex 101 first)
     let start_pos_regex = Regex::new(r"(?m)^([1-9]|1[0-5])$").unwrap();
     let end_pos_regex = Regex::new(r"(?m)^(-1|[1-9]|1[0-5])$").unwrap();
 
