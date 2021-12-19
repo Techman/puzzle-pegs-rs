@@ -7,5 +7,5 @@ edition = "2021"
 
 [dependencies]
 # https://docs.rs/clap/latest/clap/#optional-dependencies--features
-clap = { version = "~3.0.0-beta.5", default-features = true, features = ["regex"] }
+clap = { version = "~3.0.0-rc.7", default-features = true, features = ["regex"] }
 regex = "~1.5"
