@@ -15,6 +15,7 @@
 // along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 /// Represents a peg game puzzle
+#[derive(Debug)]
 pub struct PuzzlePegs {
     // Universal representation of a peg
     peg: char,
