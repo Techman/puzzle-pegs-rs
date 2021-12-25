@@ -3,6 +3,8 @@
         "rust-lang.rust",
         "bungcip.better-toml",
         "editorconfig.editorconfig",
-        "ms-vscode.cpptools"
+        "ms-vscode.cpptools",
+        "matklad.rust-analyzer",
+        "vadimcn.vscode-lldb"
     ]
 }

@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(gdb) Launch",
+            "name": "Linux GDB",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/target/debug/puzzle_pegs",
@@ -26,7 +26,7 @@
             ]
         },
         {
-            "name": "(Windows) Launch",
+            "name": "Windows VSDbg",
             "type": "cppvsdbg",
             "request": "launch",
             "program": "${workspaceFolder}/target/debug/puzzle_pegs.exe",
@@ -36,6 +36,25 @@
             "environment": [],
             "console": "integratedTerminal",
             "preLaunchTask": "Rust: cargo build"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "LLDB",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin",
+                    "puzzle_pegs"
+                ]
+            },
+            "args": [
+                // Set these values to integers. Do not commit changes based on this.
+                // "--start_pos=",
+                // "--end_pos="
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}"
         }
     ]
 }
