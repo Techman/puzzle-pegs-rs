@@ -44,7 +44,7 @@ impl PuzzlePegs {
     /// Create a puzzle with a starting hole and ending peg location specified
     /// start_pos: Starting position of hole
     /// end_pos: Ending position of final peg
-    pub fn new(start_pos: i32, end_pos: i32) -> PuzzlePegs {
+    pub fn new(start_pos: i32, end_pos: i32) -> Self {
         PuzzlePegs {
             peg: 'P',
             hole: 'H',
